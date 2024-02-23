@@ -1,9 +1,8 @@
-import { test as base } from '@playwright/test';
-import {IndexPage} from "../page_object/pages/pages/index.page";
-import {SignInPage} from "../page_object/pages/pages/users/sign_in/signIn.page";
-import {AppReadingPage} from "../page_object/pages/pages/app/reading/appReading.page";
-import {AllAuthorsPage} from "../page_object/pages/pages/app/authors/all/allAuthors.page";
-
+import { test as base } from "@playwright/test";
+import { IndexPage } from "@pages/index.page";
+import { SignInPage } from "@pages/users/sign_in/signIn.page";
+import { AppReadingPage } from "@pages/app/reading/appReading.page";
+import { AllAuthorsPage } from "@pages/app/authors/all/allAuthors.page";
 
 type Pages = {
   indexPage: IndexPage;

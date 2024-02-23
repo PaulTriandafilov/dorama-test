@@ -1,11 +1,11 @@
-import { BasePage } from '../../../../base.page';
-import { test } from '@playwright/test';
+import { BasePage } from "@pages/base.page";
+import { test } from "@playwright/test";
 
 export class SignInPage extends BasePage {
-  url = () => '/users/sign_in';
+  url = () => "/users/sign_in";
 
-  readonly emailField = this.locator('#user_email');
-  readonly passwordField = this.locator('#user_password');
+  readonly emailField = this.locator("#user_email");
+  readonly passwordField = this.locator("#user_password");
 
   readonly signInButton = this.locator('input[type="submit"]');
 
