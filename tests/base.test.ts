@@ -3,12 +3,14 @@ import { IndexPage } from "@pages/index.page";
 import { SignInPage } from "@pages/users/sign_in/signIn.page";
 import { AppReadingPage } from "@pages/app/reading/appReading.page";
 import { AllAuthorsPage } from "@pages/app/authors/all/allAuthors.page";
+import { AuthorPage } from "@pages/app/authors/author.page";
 
 type Pages = {
   indexPage: IndexPage;
   signInPage: SignInPage;
   appReadingPage: AppReadingPage;
   allAuthorsPage: AllAuthorsPage;
+  authorPage: AuthorPage;
 };
 
 export const test = base.extend<Pages>({
@@ -23,5 +25,8 @@ export const test = base.extend<Pages>({
   },
   allAuthorsPage: async ({ page }, use) => {
     await use(new AllAuthorsPage(page));
+  },
+  authorPage: async ({ page }, use) => {
+    await use(new AuthorPage(page));
   },
 });
